@@ -1,0 +1,111 @@
+# 🌐 NETLIFY DEPLOYMENT CONFIGURATION (MANDATORY)
+
+This project WILL be hosted on Netlify using a Windows laptop via VS Code.
+
+You must configure the project so deployment works immediately without manual debugging.
+
+Create and include ALL required Netlify configuration files automatically.
+
+---
+
+## REQUIRED FILE: netlify.toml
+
+Generate a complete `netlify.toml` file configured for a Next.js App Router project.
+
+Requirements:
+
+• Correct build command
+• Correct publish directory
+• Node version compatibility
+• Environment variable support
+• SPA fallback routing
+• Edge/function compatibility if needed
+
+The file must include:
+
+1. Build settings
+2. Redirect rules
+3. Headers optimization
+4. Security headers
+5. Cache optimization for assets
+
+Example structure (do NOT copy blindly — generate correctly for this project):
+
+* build command
+* publish directory
+* next runtime support
+* redirects for auth routes
+* headers for performance
+
+---
+
+## NEXT.JS + NETLIFY COMPATIBILITY
+
+Ensure project uses Netlify-compatible configuration:
+
+• Install and configure:
+@netlify/plugin-nextjs
+
+• Add Netlify plugin automatically.
+
+• Ensure SSR and API routes function correctly on Netlify.
+
+---
+
+## PACKAGE.JSON REQUIREMENTS
+
+Add scripts:
+
+* build
+* dev
+* start
+* netlify-build
+
+Ensure Netlify automatically detects build process.
+
+---
+
+## ENVIRONMENT VARIABLES SUPPORT
+
+Create `.env.example` including:
+
+SUPABASE_URL=
+SUPABASE_ANON_KEY=
+
+Do NOT hardcode secrets.
+
+---
+
+## DEPLOYMENT FLOW (IMPORTANT)
+
+Structure project so the following workflow succeeds without errors:
+
+1. Clone repo locally in VS Code (Windows)
+2. Run `npm install`
+3. Run `npm run build`
+4. Drag folder into Netlify OR connect Git repo
+5. Deploy successfully on first attempt
+
+No additional fixes should be required.
+
+---
+
+## PERFORMANCE OPTIMIZATION FOR NETLIFY
+
+• Static generation wherever possible
+• Hybrid rendering supported
+• Image optimization compatible with Netlify
+• Avoid server dependencies unsupported by Netlify
+
+---
+
+## OUTPUT REQUIREMENTS
+
+Provide:
+
+1. netlify.toml file
+2. Setup instructions for Netlify deployment
+3. Local testing instructions before deploy
+4. Known Netlify limitations handled automatically
+
+The project must be Netlify-ready by default.

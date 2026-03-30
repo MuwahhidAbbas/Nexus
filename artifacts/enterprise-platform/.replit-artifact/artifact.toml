@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Enterprise Platform"
+version = "1.0.0"
+id = "artifacts/enterprise-platform"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18202
+
+[services.development]
+run = "pnpm --filter @workspace/enterprise-platform run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/enterprise-platform", "run", "build" ]
+publicDir = "artifacts/enterprise-platform/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18202"
+BASE_PATH = "/"

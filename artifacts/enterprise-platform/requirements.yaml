@@ -1,0 +1,22 @@
+packages:
+  "framer-motion": "For page transitions, loading screen animations, and micro-interactions"
+  "recharts": "For the analytics dashboard charts (PieChart, BarChart)"
+  "date-fns": "For elegant date formatting across the platform"
+  "cmdk": "For the command palette (Cmd+K) quick navigation"
+  "zustand": "For lightweight global state management (Theme, Sidebar, Command Palette)"
+  "lucide-react": "Standard icons (already in stack but declaring for safety)"
+  "clsx": "Utility for conditionally joining classNames"
+  "tailwind-merge": "Utility to resolve Tailwind CSS class conflicts"
+
+images:
+  - path: "artifacts/enterprise-platform/public/images/auth-bg.png"
+    description: "An elegant, premium, abstract frosted glass gradient background in calm neutral tones (slate, silver, white) with a very subtle hint of corporate blue. Suitable for an enterprise SaaS login page."
+    aspect_ratio: "16:9"
+  - path: "artifacts/enterprise-platform/public/images/empty-state.png"
+    description: "A minimalist 3D illustration of an empty desk or inbox, clean white and silver tones with subtle blue lighting accents, premium corporate feel."
+    aspect_ratio: "1:1"
+
+notes:
+  - Using generated React Query hooks from @workspace/api-client-react
+  - Implemented custom HTML5 drag-and-drop for the Kanban board to avoid dependency conflicts
+  - Auth state derived directly from the /api/auth/me query

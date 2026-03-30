@@ -1,0 +1,325 @@
+You are a senior staff-level software architect and product engineer responsible for building a production-quality MVP demo for a CUSTOM ENTERPRISE PLATFORM.
+
+Your task is to design and build a COMPLETE, POLISHED, DEMO-READY system that includes:
+
+• Custom LMS (Learning Management System)
+• Task Management System
+• Employee File Storage
+• Full Automation Engine (API-driven workflows)
+• Admin Backend Dashboard
+• Mobile App (iOS + Android ready via wrapper)
+• Desktop Management Interface
+• Beautiful, premium UI that feels enterprise-grade
+
+This system must feel like a REAL SaaS PRODUCT — not a template, not a student project.
+
+---
+
+# ⭐ PRIMARY OBJECTIVE
+
+The demo must impress within **5 seconds**.
+
+The loading experience alone should create a “wow” reaction strong enough that a client immediately trusts the developer’s capability.
+
+Design philosophy:
+
+• Elegant
+• Professional
+• Premium corporate aesthetic
+• Confident and masculine visual tone
+• Minimal but powerful
+• Smooth performance (<60fps frame drops, optimized rendering)
+
+IMPORTANT:
+DO NOT use neon colors, cyberpunk themes, glowing AI gradients, or flashy startup gimmicks.
+
+Avoid:
+❌ neon purple/blue gradients
+❌ glassmorphism overload
+❌ hacker-style UI
+❌ “AI futuristic” visuals
+
+Instead aim for:
+
+✅ Apple enterprise dashboard feel
+✅ Linear.app quality
+✅ Notion + Stripe + Slack hybrid aesthetics
+✅ Calm neutral palette
+✅ Sophisticated typography
+
+---
+
+# 🎨 UI/UX DESIGN SYSTEM
+
+Color Direction:
+• Warm neutral background (#F7F8FA or similar)
+• Deep charcoal primary text
+• Soft accent color (muted blue or professional green)
+• Subtle shadows only
+• No glowing effects
+
+Typography:
+• Inter or SF Pro style hierarchy
+• Strong spacing rhythm
+• Large confident headings
+
+Animation Rules:
+• 120–200ms transitions
+• Ease-in-out curves
+• GPU accelerated animations only
+• No animation that reduces performance
+
+Performance Requirement:
+• Smooth scrolling
+• Lazy loading everywhere
+• Skeleton loaders instead of spinners
+• Optimize for perceived speed
+
+---
+
+# 🔥 LANDING + LOADING EXPERIENCE (CRITICAL)
+
+Create an INCREDIBLE loading screen:
+
+Requirements:
+• Animated logo reveal
+• Smooth progress indicator
+• Subtle motion (not flashy)
+• Micro-interactions
+• Brand statement text fades in
+
+User should feel:
+“This is expensive software.”
+
+After loading → seamless transition into dashboard.
+
+---
+
+# 🧠 CORE PLATFORM MODULES
+
+---
+
+## 1️⃣ LMS SYSTEM
+
+Features:
+• Course creation (Admin)
+• Modules & lessons
+• Video embedding
+• File attachments
+• Progress tracking
+• Completion status
+• Employee enrollment
+• Course dashboard
+
+Data Structure:
+Users
+Courses
+Modules
+Lessons
+Progress
+
+---
+
+## 2️⃣ TASK MANAGEMENT
+
+Features:
+• Assign tasks to employees
+• Status tracking (Todo / In Progress / Complete)
+• Deadlines
+• Comments
+• Priority levels
+• Dashboard analytics
+
+UI:
+Kanban + List toggle.
+
+---
+
+## 3️⃣ EMPLOYEE FILE STORAGE
+
+Use Supabase Storage.
+
+Features:
+• Upload documents
+• Folder structure
+• Role-based access
+• Preview files
+• Download permissions
+
+---
+
+## 4️⃣ AUTOMATION ENGINE (KEY SELLING POINT)
+
+Create rule-based automation system:
+
+Examples:
+• When course completed → assign task
+• When task completed → notify admin
+• When file uploaded → trigger workflow
+
+Implementation:
+Event-driven architecture.
+
+Create:
+Automation Rules Table:
+trigger
+condition
+action
+
+---
+
+## 5️⃣ ADMIN DASHBOARD
+
+Admin can:
+• Manage users
+• Create courses
+• Assign tasks
+• View analytics
+• Manage storage
+• Configure automations
+
+Dashboard widgets:
+• Active users
+• Task completion rate
+• Course progress
+• Recent activity feed
+
+---
+
+# 📱 MOBILE APP REQUIREMENT
+
+Build using:
+
+React Native OR Capacitor wrapper.
+
+Must:
+• Share same backend
+• Responsive UI
+• Installable on iOS & Android
+• Smooth navigation
+
+---
+
+# ⚙️ TECH STACK (MANDATORY)
+
+Frontend:
+• Next.js (App Router)
+• TypeScript
+• TailwindCSS
+• Framer Motion (light usage)
+
+Backend:
+• Supabase (FREE TIER)
+
+* Auth
+* PostgreSQL
+* Storage
+* Realtime
+
+APIs:
+ONLY FREE APIs allowed.
+
+No paid services.
+
+---
+
+# 🔐 AUTH SYSTEM
+
+Roles:
+• Admin
+• Manager
+• Employee
+
+Use Supabase Auth.
+
+Include:
+• Secure login
+• Session persistence
+• Protected routes
+
+---
+
+# 📊 DATABASE DESIGN
+
+Generate full schema automatically:
+
+Tables:
+users
+roles
+courses
+modules
+lessons
+progress
+tasks
+comments
+files
+automations
+activity_logs
+
+Add relationships + foreign keys.
+
+---
+
+# ⚡ PERFORMANCE REQUIREMENTS
+
+• Lighthouse score 90+
+• Code splitting
+• Server components when possible
+• Optimized images
+• Minimal JS bundle
+
+---
+
+# 🧩 DEMO DATA
+
+Auto-seed database with:
+
+• 5 employees
+• 3 courses
+• 15 tasks
+• example automations
+
+So platform looks alive immediately.
+
+---
+
+# 🪄 FINAL TOUCHES (IMPORTANT)
+
+Add:
+• Dark mode toggle
+• Command palette (⌘K style)
+• Smooth sidebar navigation
+• Empty states with illustrations
+• Professional icons (Lucide)
+
+---
+
+# 🚀 DEPLOYMENT
+
+Prepare for:
+• One-click deploy on Replit
+• Public demo URL
+• Environment variables setup guide
+
+---
+
+# 🧾 OUTPUT REQUIREMENTS
+
+Deliver:
+
+1. Complete working codebase
+2. Setup instructions
+3. Database schema
+4. Demo login credentials
+5. Deployment steps
+6. Mobile build instructions
+
+---
+
+You are NOT building a prototype.
+
+You are building a client-winning product demo that looks like a funded SaaS platform.
+
+Prioritize polish, usability, performance, and visual trust over feature quantity.
+
+Every screen must feel intentional and premium.
