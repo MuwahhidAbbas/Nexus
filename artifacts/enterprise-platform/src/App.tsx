@@ -3,7 +3,12 @@ import { Switch, Route, Router as WouterRouter } from "wouter";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { setAuthTokenGetter } from "@workspace/api-client-react";
+import { setAuthTokenGetter, setBaseUrl } from "@workspace/api-client-react";
+
+// In production the API lives on a different domain (Render).
+// Set VITE_API_URL=https://your-api.onrender.com in Netlify env vars.
+const apiUrl = import.meta.env.VITE_API_URL as string | undefined;
+if (apiUrl) setBaseUrl(apiUrl);
 
 setAuthTokenGetter(() => localStorage.getItem('auth_token'));
 

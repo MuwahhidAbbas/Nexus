@@ -1,0 +1,12 @@
+[build]
+  command = "npm install -g pnpm && pnpm install --frozen-lockfile && pnpm --filter @workspace/enterprise-platform run build"
+  publish = "artifacts/enterprise-platform/dist/public"
+
+[build.environment]
+  NODE_VERSION = "20"
+  NODE_ENV = "production"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
