@@ -38,13 +38,13 @@ export default function Learning() {
 
   const handleCreate = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!authQuery.data?.id) return;
+    if (!authQuery.user?.id) return;
     createCourse.mutate({
       data: {
         title,
         description,
         status,
-        createdById: authQuery.data.id
+        createdById: authQuery.user?.id
       }
     });
   };
@@ -123,7 +123,7 @@ export default function Learning() {
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {courses?.map((course) => (
+          {courses.map((course) => (
             <Link key={course.id} href={`/learning/${course.id}`}>
               <Card className="overflow-hidden rounded-2xl cursor-pointer border-border/50 hover:shadow-xl hover:border-primary/20 transition-all duration-300 group h-full flex flex-col bg-card">
                 <div className="h-32 bg-gradient-to-br from-primary/20 to-primary/5 relative p-4 flex flex-col justify-between border-b border-border/30">
