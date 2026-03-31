@@ -26,16 +26,18 @@ export default function Dashboard() {
     );
   }
 
+  if (!stats.tasksByStatus || !stats.coursesByStatus) return null;
+
   const taskData = [
-    { name: 'To Do', value: stats.tasksByStatus.todo || 0 },
-    { name: 'In Progress', value: stats.tasksByStatus.in_progress || 0 },
-    { name: 'Completed', value: stats.tasksByStatus.completed || 0 },
+    { name: 'To Do', value: stats.tasksByStatus?.todo || 0 },
+    { name: 'In Progress', value: stats.tasksByStatus?.in_progress || 0 },
+    { name: 'Completed', value: stats.tasksByStatus?.completed || 0 },
   ];
 
   const courseData = [
-    { name: 'Draft', value: stats.coursesByStatus.draft || 0 },
-    { name: 'Published', value: stats.coursesByStatus.published || 0 },
-    { name: 'Archived', value: stats.coursesByStatus.archived || 0 },
+    { name: 'Draft', value: stats.coursesByStatus?.draft || 0 },
+    { name: 'Published', value: stats.coursesByStatus?.published || 0 },
+    { name: 'Archived', value: stats.coursesByStatus?.archived || 0 },
   ];
 
   return (
