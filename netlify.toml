@@ -1,5 +1,5 @@
 [build]
-  command = "npm install -g pnpm && pnpm install --frozen-lockfile && pnpm --filter @workspace/enterprise-platform run build"
+  command = "pnpm install --frozen-lockfile && pnpm --filter @workspace/enterprise-platform run build"
   publish = "artifacts/enterprise-platform/dist/public"
 
 [build.environment]
